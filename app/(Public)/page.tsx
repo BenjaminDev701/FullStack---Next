@@ -1,4 +1,5 @@
 
+import Hero from "@/src/shared/components/ui/Hero";
 import { Metadata } from "next";
 
 //*siempre se debe exportar esto, esto es el SEO de la pagina
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <h1>Inicio</h1>
+      <Hero />
     </>
 
   )
