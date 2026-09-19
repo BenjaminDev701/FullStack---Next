@@ -1,7 +1,10 @@
-export default function FormInput() {
+import clsx from "clsx";
+import { InputHTMLAttributes } from "react";
+
+type Props = InputHTMLAttributes<HTMLInputElement>
+export default function FormInput({ className, ...props }: Props) {
     return (
-        <div>
-            <h1>Forminput</h1>
-        </div>
+        <input {...props}
+            className={clsx("border border-slate-200 w-full p-2", className)} />
     );
 }
