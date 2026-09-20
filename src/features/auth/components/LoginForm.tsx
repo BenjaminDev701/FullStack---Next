@@ -1,8 +1,7 @@
 "use client"
 
-import Form from "@/src/shared/components/forms/Form";
-import FormInput from "@/src/shared/components/forms/FormInput";
-import FormLabel from "@/src/shared/components/forms/FormLabel";
+import { Form, FormInput, FormLabel, FormSubmit } from "@/src/shared/components/forms"
+
 
 export default function LoginForm() {
     return (
@@ -13,6 +12,7 @@ export default function LoginForm() {
             <FormLabel htmlFor="password">Contraseña</FormLabel>
             <FormInput type="password" id="password" placeholder="*******" />
 
+            <FormSubmit value="Iniciar Sesión" />
         </Form>
     );
 }
