@@ -1,3 +1,4 @@
+import RegisterForm from "@/src/features/auth/components/RegisterForm";
 import Heading from "@/src/shared/components/tipografia/Heading";
 import { generatePageTitle } from "@/src/shared/utils/metadata";
 import { Metadata } from "next";
@@ -10,7 +11,7 @@ export default function RegisterPage() {
     return (
         <>
             <Heading level={1}>Crear Cuenta</Heading>
-            <Heading level={3}>Crear Cuenta</Heading>
+            <RegisterForm />
         </>
     )
 }   
