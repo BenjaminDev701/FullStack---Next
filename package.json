@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^5.9.1",
+    "better-auth": "^1.7.5",
     "clsx": "^2.1.1",
     "dotenv": "^18.0.1",
     "drizzle-orm": "^1.0.0-beta.22",
