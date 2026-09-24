@@ -10,5 +10,7 @@ export const auth = betterAuth({
         //*las tablas esten en plural
         usePlural: true,
 
-    })
+    }),
+    //* ayuda a gestionar las cookies y headers de nextjs del lado 
+    plugins: [nextCookies()]
 })
