@@ -1,5 +1,6 @@
 //TODO: Herramienta para la logica del Negocio
 
+import { auth } from "@/src/lib/auth";
 import { SignUpInput } from "../schemas/authSchema";
 
 class AuthService {
@@ -16,6 +17,13 @@ class AuthService {
 
 
         //*Manejar el registro
+        await auth.api.signUpEmail({
+            body: {
+                name,
+                email,
+                password
+            }
+        })
 
 
     }
